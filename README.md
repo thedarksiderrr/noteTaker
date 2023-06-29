@@ -1,2 +1,2 @@
 # noteTaker
-This is complete CRUD operation i have done using JSP, Servlet &amp; Hibernate, this is a small note taker web site when user can create notes, see that notes, update/delete existing notes.
+Complete CRUD operation I have done using JSP, Servlet &amp; Hibernate, this is a small note-taker website where users can create notes, see that notes, and update/delete existing notes.
