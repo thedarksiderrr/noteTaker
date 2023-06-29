@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<!-- Define Properties/Configuration -->
+
+		<!-- Driver -->
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+
+		<!-- URL -->
+		<property name="connection.url">jdbc:mysql://localhost:3306/noteTaker</property>
+
+		<!-- Username -->
+		<property name="connection.username">root</property>
+
+		<!-- Password -->
+		<property name="connection.password">root</property>
+
+		<!-- Dialect Class -->
+		<property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+		<!-- Table Create automatically -->
+		<property name="hbm2ddl.auto">update</property>
+
+		<!-- Show Database/Query -->
+		<property name="show_sql">true</property>
+		
+		<!-- Format SQL Query -->
+		<property name="format_sql">true</property>
+
+		<!-- Mapping Class -->
+		<mapping class="com.entities.NoteEntity"/>
+
+
+	</session-factory>
+</hibernate-configuration>
